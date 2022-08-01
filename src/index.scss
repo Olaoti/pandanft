@@ -5,6 +5,11 @@
 @import "./backgrounds/bg-styles/linebg.scss";
 @import "./styles/components/logo.scss";
 @import "./styles/components/nav.scss";
+@import "./styles/components/homeDescription.scss";
+@import "./styles/components/homeImages.scss";
+@import "./styles/components/wallet.scss";
+@import "./styles/components/guide.scss";
+@import "./styles/components/joinCommunity.scss";
 
 
 *{
@@ -18,4 +23,48 @@ html{
 body {
   background-color: $color-mainbg;
   font-family:"Poppins", sans-serif;
+}
+.btn{
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  text-transform: capitalize;
+  color: $color-white;
+  padding: 1.2rem 3.6rem;
+  border-radius: 16px;
+  border: 1px solid $color-pry-blue;
+  z-index: 10;
+  transition: 300ms ease;
+  width: fit-content;
+  &:hover{
+     background-color: $color-pry-blue;
+  }
+}
+.button{
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  text-transform: capitalize;
+  color: $color-white;
+  padding: 1.2rem 3.6rem;
+  background-color: $color-pry-blue;
+  border-radius: 12px;
+  z-index: 10;
+  transition: 300ms ease;
+  border: 1px solid $color-pry-blue;
+  width: fit-content;
+  &:hover{
+  background-color: rgba(0,0,0,0);
+  }
+}
+.sub-heading{
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  color: $color-white;
+}
+.texts{
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
 }

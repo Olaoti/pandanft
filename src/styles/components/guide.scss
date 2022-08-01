@@ -1,0 +1,44 @@
+.guide{
+    padding: 5rem 9.4rem 5rem 12rem;
+    text-align: center;
+    &__container{
+        padding: 5rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .guide__card{
+            margin-right: 2.6rem;
+            background-color:$color-gray9;
+            padding: 5.6rem 3.9rem;
+            border-radius: 16px;
+            transition: all 400ms ease;
+            &:hover{
+                background-color: rgba(0,0,0,0.1);
+            }
+            &__icon{
+                padding:2.7rem;
+                background-color:$color-pry-blue ;
+                border-radius: 50%;
+                width: fit-content;
+                margin: auto;
+                img{
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+            }
+            &__head{
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 3.3rem;
+                color: $color-white;
+                text-transform: capitalize;
+                margin: 4.8rem auto 2.4rem;
+            }
+            &__texts{
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                color: $color-gray;
+            }
+        }
+    }
+}

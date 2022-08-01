@@ -13,7 +13,7 @@ function Nav() {
         <div>About Us</div>
         <div>Contact Us</div>
       </div>
-      <div className="nav__btn">Connect wallet</div>
+      <div className="btn">Connect wallet</div>
     </div>
   );
 }

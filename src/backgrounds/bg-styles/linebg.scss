@@ -5,10 +5,13 @@
     display: flex;
     justify-content: space-around;
     color: white;
+    z-index:-1;
     div{
         opacity: 0.2;
         height: 100%;
         width: 1.5px;
         background-color: $color-white;
+        z-index:-1;
+
     }
 }

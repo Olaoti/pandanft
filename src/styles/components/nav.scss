@@ -3,11 +3,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index:10;
     &__links{
+        margin-left: 1.8rem;
+        z-index:10;
         display: flex;
         align-items: center; 
         div{
-            padding: 0.5rem 0 0.5rem 3.2rem;
+            z-index:10;
+            padding: 0.5rem 0;
+            margin-left: 3.2rem;
             font-weight: 600;
             font-size: 1.6rem;
             line-height: 3.2rem;
@@ -20,17 +25,5 @@
         }
         }
     }
-    &__btn{
-        font-weight: 600;
-        font-size: 1.6rem;
-        line-height: 3.2rem;
-        text-transform: capitalize;
-        color: $color-white;
-        padding: 1.2rem 3.6rem;
-        border-radius: 16px;
-        border: 1px solid $color-bgshadow-darker;
-        &:hover{
-            color: red;
-        }
-    }
+   
 }
