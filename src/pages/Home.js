@@ -6,6 +6,7 @@ import HomeImages from "../components/HomeImages";
 import Wallets from "../components/Wallets";
 import Guide from "../components/Guide";
 import JoinCommunity from "../components/JoinCommunity";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
         <Wallets />
         <Guide />
         <JoinCommunity />
+        <Footer />
       </div>
     </div>
   );

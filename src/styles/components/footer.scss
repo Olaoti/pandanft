@@ -1,0 +1,26 @@
+.footer{
+    padding: 8rem 12rem 6rem;
+    &__boxes{
+        display: flex;
+        &__desc{
+            &:not(:first-child){
+                padding-left: 6rem;  
+            }        
+        } :nth-child(2)>.texts, :nth-child(3) .texts{
+            width: max-content;
+        }
+    }
+    .texts{
+        color: $color-gray;
+    }
+    .mini-head{
+        color: $color-white;
+    }
+    &__copyright{
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: $color-gray;
+        padding-top: 2.4rem;
+    }
+}

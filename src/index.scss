@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+
 @import "./styles/variables";
 
 @import "./styles/pages/home.scss";
+@import "./styles/pages/discover.scss";
+
+
 @import "./backgrounds/bg-styles/linebg.scss";
 @import "./styles/components/logo.scss";
 @import "./styles/components/nav.scss";
@@ -9,6 +16,8 @@
 @import "./styles/components/homeImages.scss";
 @import "./styles/components/wallet.scss";
 @import "./styles/components/guide.scss";
+@import "./styles/components/nftcard.scss";
+@import "./styles/components/footer.scss";
 @import "./styles/components/joinCommunity.scss";
 
 
@@ -23,14 +32,15 @@ html{
 body {
   background-color: $color-mainbg;
   font-family:"Poppins", sans-serif;
+  color: $color-white;
 }
 .btn{
   font-weight: 600;
   font-size: 1.6rem;
-  line-height: 3.2rem;
+  line-height: 2.5rem;
   text-transform: capitalize;
   color: $color-white;
-  padding: 1.2rem 3.6rem;
+  padding: 1.2rem 3rem;
   border-radius: 16px;
   border: 1px solid $color-pry-blue;
   z-index: 10;
@@ -38,15 +48,16 @@ body {
   width: fit-content;
   &:hover{
      background-color: $color-pry-blue;
+     cursor: pointer;
   }
 }
 .button{
   font-weight: 600;
   font-size: 1.6rem;
-  line-height: 3.2rem;
+  line-height: 2.5rem;
   text-transform: capitalize;
   color: $color-white;
-  padding: 1.2rem 3.6rem;
+  padding: 1.2rem 3rem;
   background-color: $color-pry-blue;
   border-radius: 12px;
   z-index: 10;
@@ -55,6 +66,7 @@ body {
   width: fit-content;
   &:hover{
   background-color: rgba(0,0,0,0);
+  cursor: pointer;
   }
 }
 .sub-heading{
@@ -67,4 +79,13 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 3.2rem;
+}
+.mini-head{
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  text-transform: capitalize;
+}
+.link{
+  text-decoration: none;
 }

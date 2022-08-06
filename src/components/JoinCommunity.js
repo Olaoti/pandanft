@@ -8,7 +8,7 @@ function JoinCommunity() {
         We have a large scale group to support each other in this game, Join us
         to get the news as soon as possible and follow our latest announcements!
       </div>
-      <div className="button">Join Comunity Now</div>
+      <div className="button">Join Community Now</div>
     </div>
   );
 }

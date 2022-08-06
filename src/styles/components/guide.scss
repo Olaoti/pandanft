@@ -8,11 +8,13 @@
         .guide__card{
             margin-right: 2.6rem;
             background-color:$color-gray9;
-            padding: 5.6rem 3.9rem;
+            padding: 5.6rem 8%;
             border-radius: 16px;
             transition: all 400ms ease;
+            border: 1px solid $color-gray9;
             &:hover{
                 background-color: rgba(0,0,0,0.1);
+                border-radius: 24px;
             }
             &__icon{
                 padding:2.7rem;
