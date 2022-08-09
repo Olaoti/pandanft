@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
-import NFTcard from "../components/NFTcard";
-import Auctions from "../lists/components/Auctions";
+//import NFTcard from "../components/NFTcard";
+//import Auctions from "../lists/components/Auctions";
 import Nftlist from "../lists/Nftlist";
 import Footer from "../components/Footer";
 

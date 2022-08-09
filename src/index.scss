@@ -5,21 +5,6 @@
 
 @import "./styles/variables";
 
-@import "./styles/pages/home.scss";
-@import "./styles/pages/discover.scss";
-
-
-@import "./backgrounds/bg-styles/linebg.scss";
-@import "./styles/components/logo.scss";
-@import "./styles/components/nav.scss";
-@import "./styles/components/homeDescription.scss";
-@import "./styles/components/homeImages.scss";
-@import "./styles/components/wallet.scss";
-@import "./styles/components/guide.scss";
-@import "./styles/components/nftcard.scss";
-@import "./styles/components/footer.scss";
-@import "./styles/components/joinCommunity.scss";
-
 
 *{
   margin: 0;
@@ -41,7 +26,7 @@ body {
   text-transform: capitalize;
   color: $color-white;
   padding: 1.2rem 3rem;
-  border-radius: 16px;
+  border-radius: 12px;
   border: 1px solid $color-pry-blue;
   z-index: 10;
   transition: 300ms ease;
@@ -89,3 +74,47 @@ body {
 .link{
   text-decoration: none;
 }
+.timer{
+  position: absolute;
+  z-index: 7;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif ;
+  display: flex;
+  background-color: $color-gray1;
+  padding: .5rem 1.5rem;
+  align-items: center;
+  border-radius: 1.6rem;
+  height: min-content;
+    &__icon{
+      padding-right: 1.2rem;
+      width: 3rem !important;
+      height: 2.4rem !important;
+      object-fit: fill;
+  }
+}
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+@import "./backgrounds/bg-styles/linebg.scss";
+@import "./styles/components/logo.scss";
+@import "./styles/components/nav.scss";
+@import "./styles/components/homeDescription.scss";
+@import "./styles/components/homeImages.scss";
+@import "./styles/components/wallet.scss";
+@import "./styles/components/guide.scss";
+@import "./styles/components/nftcard.scss";
+@import "./styles/components/footer.scss";
+@import "./styles/components/joinCommunity.scss";
+@import "./styles/components/productdescription.scss";
+@import "./styles/components/productoffers.scss";
+@import "./styles/components/producthistory.scss";
+
+
+
+@import "./styles/pages/home.scss";
+@import "./styles/pages/discover.scss";
+@import "./styles/pages/product.scss";

@@ -1,5 +1,5 @@
 import React from "react";
-import fireicon from "../assets/icons/fire.png";
+import Timer from "./Timer";
 
 function NFTcard({ nftlist }) {
   return (
@@ -8,17 +8,12 @@ function NFTcard({ nftlist }) {
         return (
           <div className="nftcard" key={nft.id}>
             <div className="nftcard__top">
-              <div className="nftcard__top__image">
+              <div className="nftcard__top__nftimage">
                 <div className="place-bid">
                   <div className="button">Place a Bid</div>
                 </div>
                 <img src={nft.nftima} alt="" className="img" />
-                <div className="nftcard__top__timer">
-                  <span className="icon">
-                    <img src={fireicon} alt="" />
-                  </span>{" "}
-                  <span>05 : 12 : 47 : 45</span>
-                </div>
+                <Timer timervalue="05 : 15 : 47 : 45" />
               </div>
             </div>
             <div className="nftcard__bottom">
@@ -36,7 +31,7 @@ function NFTcard({ nftlist }) {
                 </div>
                 <div className="nftcard__bottom__personal__nftinfo">
                   <div className="smtext">Current bid</div>
-                  <div className="nft-price">{nft.nftprice}ETH</div>
+                  <div className="nft-price">{nft.nftprice} ETH</div>
                 </div>
               </div>
             </div>

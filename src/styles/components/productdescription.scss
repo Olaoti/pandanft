@@ -1,0 +1,13 @@
+.productdescription{
+  width: 70%;
+  text-align: left;
+  &__info{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+    .bold{
+      font-weight: 700;
+    }
+  }
+}

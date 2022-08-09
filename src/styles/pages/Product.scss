@@ -1,0 +1,102 @@
+.product{
+    width: 100%;
+    &__box{
+        padding: 5rem 12rem;
+        width: 100%;
+        display: grid;
+        height: inherit;
+        grid-template-columns: 1fr 1fr;
+        &__nftimage{
+            width: 100%;
+            height: auto;
+            z-index: 6;
+            padding-right: 1.5rem;
+            position: relative;
+            .productnftimg{
+                width: 100%;
+                height: 75vh;
+                object-fit: cover;
+                object-position: center center;
+                border-radius: 10px;
+            }
+            .producttimer{
+                width: 100%;
+                display: grid;
+                place-items: center;
+                .timer{
+                    margin: auto;
+                    bottom: 2.4rem;
+                    display: flex;
+                    left: auto;
+                }
+            }
+     
+        }    
+        &__desc{
+            height: auto;
+            .texts{
+                color: $color-gray;
+            }
+            padding-left: 2.5rem;
+            &__details{
+                padding: 2.4rem 0;
+            }
+            &__bid{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .currentval{
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    line-height: 3.2rem;
+                    text-transform: capitalize;
+                }
+            }
+            &__personsdetails{
+                margin: 4rem 0 5.6rem;
+                background-color: $color-gray9;
+                border-radius: 16px;
+                padding: 1.8rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &__person1, &__person2{
+                    display: flex;
+                    img{
+                        width: 6.4rem;
+                        height: 6.4rem;
+                        border-radius: 1.6rem;
+                        margin-right: 1.6rem;
+                    }
+                .persondescription{
+                    .name{
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 150%;
+                        margin-top: 0.4rem;
+                    }
+                }
+                }
+            }
+            &__buttons{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+    &__details{
+        padding: 6rem 15%;
+        &__navbtns{
+            padding-bottom: 4rem;
+            .btn{
+                border: 0; 
+            }
+            .button{
+                &:hover{
+                    background-color: $color-pry-blue;
+                }
+            }
+        }
+    }
+}

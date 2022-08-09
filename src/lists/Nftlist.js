@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import nftimg1 from "../assets/images/NFTimages/nft.png";
 import nftimg2 from "../assets/images/NFTimages/nft1.png";
 import nftimg3 from "../assets/images/NFTimages/nft2.png";
@@ -19,10 +19,10 @@ import person9 from "../assets/images/peopleimages/person9.png"
 import person10 from "../assets/images/peopleimages/person10.png"*/
 
 import Auctions from "./components/Auctions";
-import NFTcard from "../components/NFTcard";
+//import NFTcard from "../components/NFTcard";
 
 function HotNFT() {
-  const [list, setList] = useState([
+  const list = [
     {
       id: 1,
       nftima: nftimg1,
@@ -143,13 +143,13 @@ function HotNFT() {
       tokenstnd: ,
       lastbid: ,
     },*/,
-  ]);
-  var hotlist = list.filter((newlist) => {
+  ];
+  /*var hotlist = list.filter((newlist) => {
     return newlist.nftpos === "Hot";
   });
   var livelist = list.filter((newlivelist) => {
     return newlivelist.nftpos === "live";
-  });
+  });*/
   return (
     <div className="nftlist">
       <Auctions nftlist={list} />
