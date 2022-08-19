@@ -6,10 +6,11 @@ import Timer from "../components/Timer";
 import Productdescription from "../components/Productdescription";
 import Productoffers from "../components/Productoffers";
 import Producthistory from "../components/Producthistory";
+import Auction from "../lists/components/Auction";
 import person_img from "../assets/images/peopleimages/person9.png";
 import creator_img from "../assets/images/peopleimages/person10.png";
 
-function Product() {
+function Product({ name }) {
   const [descriptionclick, setDescriptionClick] = useState(true);
   const [historyClick, setHistoryClick] = useState(false);
   const [offerClick, setOfferClick] = useState(false);
@@ -40,7 +41,7 @@ function Product() {
           <img src={nft} className="productnftimg" alt="nft" />
         </div>
         <div className="product__box__desc">
-          <div className="sub-heading">#1119 Seagull</div>
+          <div className="sub-heading">{name}#1119 Seagull</div>
           <div className="product__box__desc__details texts">
             The Birdhouse is a collection of 6000 birds, each with it's own
             unique traits & personality. See them all at TheBirdHouse.app
@@ -102,6 +103,13 @@ function Product() {
         )}
         {offerClick ? <Productoffers className="offer-toggle" /> : ""}
         {historyClick ? <Producthistory className="history-toggle" /> : ""}
+      </div>
+      <div className="othernfts">
+        <div className="flexbox">
+          <div className="sub-heading">Another NFTs</div>
+          <div className="btn">View More</div>
+        </div>
+        <Auction />
       </div>
       <Footer />
     </div>

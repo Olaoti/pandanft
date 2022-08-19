@@ -1,11 +1,12 @@
 .product{
     width: 100%;
     &__box{
-        padding: 5rem 12rem;
+        padding: 5rem 8%;
         width: 100%;
         display: grid;
         height: inherit;
         grid-template-columns: 1fr 1fr;
+
         &__nftimage{
             width: 100%;
             height: auto;
@@ -83,10 +84,10 @@
                 align-items: center;
                 justify-content: space-between;
             }
-        }
+        }    
     }
     &__details{
-        padding: 6rem 15%;
+        padding: 5rem 8%;
         &__navbtns{
             padding-bottom: 4rem;
             .btn{
@@ -97,6 +98,12 @@
                     background-color: $color-pry-blue;
                 }
             }
+        }       
+    }  
+    .othernfts{
+        padding: 5rem 8%;
+        .flexbox{
+            padding: 5.6rem 0;
         }
     }
 }

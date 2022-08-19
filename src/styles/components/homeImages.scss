@@ -1,0 +1,26 @@
+.homeImages{
+    overflow: hidden;
+    &__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-right: -20%;
+        overflow: hidden;
+        .card{
+            display: block;
+            max-height: 80vh;
+        }
+        .nftimage{
+            width: 100%;
+            position: relative;
+            height: min-content;
+            margin-left: 2.7rem;
+            padding: 2.4rem;
+            background-color: $color-gray9;
+            border-radius: 2.4rem;
+            .img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

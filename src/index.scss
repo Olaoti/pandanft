@@ -74,9 +74,21 @@ body {
 .link{
   text-decoration: none;
 }
-.timer{
+.timerwrap{
+  height: 100%;
+  width: 100%;
   position: absolute;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: baseline;
   z-index: 7;
+  top: 0;
+  left: 0;
+  padding-top: 80%;
+}
+.timer{
+  width: fit-content;
   font-weight: 700;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif ;
@@ -96,10 +108,13 @@ body {
 .flexbox{
   display: flex;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
+
 @import "./backgrounds/bg-styles/linebg.scss";
+@import "./backgrounds/bg-styles/blurbg.scss";
+
 @import "./styles/components/logo.scss";
 @import "./styles/components/nav.scss";
 @import "./styles/components/homeDescription.scss";
@@ -112,6 +127,7 @@ body {
 @import "./styles/components/productdescription.scss";
 @import "./styles/components/productoffers.scss";
 @import "./styles/components/producthistory.scss";
+@import "./styles/components/artists.scss";
 
 
 
