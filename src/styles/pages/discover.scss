@@ -1,9 +1,10 @@
 .discover{
+    padding: 0;
+    margin: 0;
     width: 100%;
-    padding: 4rem 8%;
     .sub-heading{
         text-align: center;
-        margin: 4rem auto 3rem;
+        margin: 14rem auto 3rem;
     }
     .searchbox{
         width: 60%;
@@ -36,7 +37,7 @@
         }
     }
     .flexbox{
-        padding: 0 0 2.8rem;
+        padding: 0 8% 2.8rem;
         .flexbox .btn:not(:last-child){
             margin-right: 2.4rem;
         }
@@ -45,10 +46,7 @@
         margin: 5.6rem auto;
         text-align: center;
     }
-    .nav{
-        padding: 0;
-    }
-    .footer{
-        padding: 0;
+    .nft-section{
+        padding: 4rem 8% 2rem;
     }
 }

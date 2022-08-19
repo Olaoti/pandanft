@@ -4,7 +4,7 @@
     width: 100%;
     z-index: 4;
     &__contents{
-        padding: 3rem 0 5rem 8%;
+        padding: 14rem 0 5rem 8%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: 100%;
@@ -18,3 +18,24 @@
 
     }
   }
+  @media screen and (max-width: 1150px){
+    .home{
+        &__contents{
+            padding: 14rem 0 4rem 6%;
+        }
+    }
+  }
+  @media screen and (max-width: 1000px){
+    .home{
+        &__contents{
+            padding: 14rem 0 4rem 4%;
+        }
+    }
+  }
+  @media screen and (max-width:870px){
+    .home{
+        &__contents{
+            display: block;
+        }
+    }
+}

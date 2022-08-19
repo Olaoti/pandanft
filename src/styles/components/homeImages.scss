@@ -24,3 +24,57 @@
         }
     }
 }
+@media screen and (max-width:1150px){
+    .homeImages{
+        .card{
+            .person-name{
+                font-size: 1.6rem;
+            }
+            .nft-price{
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+@media screen and (max-width:1000px){
+    .homeImages{
+        &__content{
+            margin-right: -35%;
+        }
+    }
+}
+@media screen and (max-width:870px){
+    .homeImages{
+        &__content{
+           margin-right: 0;
+           place-items: center;
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .homeImages{
+        &__content{
+           margin-right: -15%;
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .homeImages{
+        &__content{
+           margin-right: -35%;
+        }
+    }
+}
+@media screen and (max-width:420px){
+    .homeImages{
+        &__content{
+            display: block;
+            margin-right: 2.4rem;
+           .card{
+            width: 100%;
+           }.nftimage{
+            display: none;
+           }
+        }
+    }
+}

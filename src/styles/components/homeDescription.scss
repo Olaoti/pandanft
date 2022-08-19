@@ -17,3 +17,58 @@
         margin-bottom: 4rem;
     }
 }
+@media screen and (max-width: 1150px){
+    .description{
+        padding-right: 2.4rem;
+        &__head{
+            font-size: 5.4rem;
+            line-height: 7.2rem;
+        }
+        &__text{
+            font-size: 1.5rem;
+            line-height: 3.2rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    .description{
+        padding-right: 2rem;
+        &__head{
+            font-size: 5rem;
+            line-height: 7rem;
+        }
+        &__text{
+            font-size: 1.5rem;
+            line-height: 3.2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 870px){
+    .description{
+        padding: 0 15% 5.2rem 1rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .description{
+        padding: 0 10% 5.2rem 1rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .description{
+        padding: 0 1.8rem 4rem 1rem;
+        &__head{
+            font-size: 4.6rem;
+            line-height: 6.4rem;
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    .description{
+        &__head{
+            font-size: 4.2rem;
+            line-height: 6rem;
+        }
+    }
+}
