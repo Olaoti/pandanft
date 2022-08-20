@@ -114,6 +114,8 @@ body {
   .auctioncards{
     .card{
       overflow: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
       .nftcard{
         width: 35vw;
       }
@@ -121,6 +123,8 @@ body {
   }
   .artists{
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     .artist{
       width: 30vw;
       &__name{
@@ -128,6 +132,10 @@ body {
         line-height: 3rem;
       }
     }
+  }
+  .auctioncards::-webkit-scrollbar,
+  .artists::-webkit-scrollbar{
+    display: none;
   }
   .sub-heading{
     font-size: 4.5rem;
@@ -152,7 +160,6 @@ body {
     }
   }
   .artists{
-    overflow: scroll;
     .artist{
       width: 35vw;
     }
