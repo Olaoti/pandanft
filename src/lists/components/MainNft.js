@@ -3,7 +3,7 @@ import Nftlist from "../Nftlist";
 
 function MainNft() {
   return (
-    <div className="nft-section">
+    <div className="mainNft nft-section">
       <Nftlist btnCheck />
     </div>
   );

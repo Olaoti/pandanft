@@ -3,7 +3,7 @@ import Nftlist from "../Nftlist";
 
 function Auction() {
   return (
-    <div className="nft-section">
+    <div className="auctioncards">
       <Nftlist checkList={"live"} />
     </div>
   );

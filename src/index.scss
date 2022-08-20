@@ -110,7 +110,191 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width:950px) {
+  .auctioncards{
+    .card{
+      overflow: scroll;
+      .nftcard{
+        width: 35vw;
+      }
+    }
+  }
+  .artists{
+    overflow: scroll;
+    .artist{
+      width: 30vw;
+      &__name{
+        font-size: 2.2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+  .sub-heading{
+    font-size: 4.5rem;
+    line-height: 6.2rem;
+  }
+  .texts{
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .mini-head{
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
 
+@media screen and (max-width:720px) {
+  .auctioncards{
+    .card{
+      .nftcard{
+        width: 40vw;
+      }
+    }
+  }
+  .artists{
+    overflow: scroll;
+    .artist{
+      width: 35vw;
+    }
+  }
+  .sub-heading{
+    font-size: 4.3rem;
+    line-height: 5.8rem;
+  }
+  .btn, .button{
+    font-size: 1.4rem;
+    padding: 1rem 1.6rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .auctioncards{
+    .card{
+      .nftcard{
+        width: 45vw;
+      }
+    }
+  }
+  .artists{
+    .artist{
+      width: 35vw;
+      &__name{
+        font-size: 2rem;
+        line-height: 2.6rem;
+      }
+      &__number{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    }
+  }
+  .sub-heading{
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  .texts{
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .mini-head{
+    font-size: 2rem;
+    line-height:2.8rem;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .auctioncards{
+    .card{
+      .nftcard{
+        width: 55vw;
+      }
+    }
+  }
+  .artists{
+    .artist{
+      width: 45vw;
+    }
+  }
+}
+
+@media screen and (max-width:480px) {
+  .artists{
+    .artist{
+      width: 55vw;
+    }
+  }
+  .sub-heading{
+    font-size: 3.45rem;
+    line-height: 4.2rem;
+  }
+}
+@media screen and (max-width:430px) {
+  .auctioncards{
+    .card{
+      .nftcard{
+        width: 65vw;
+      }
+    }
+  }
+.artists{
+  .artist{
+    width: 65vw;
+  }
+}
+.sub-heading{
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+}
+@media screen and (max-width:400px) {
+  .sub-heading{
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  .btn, .button{
+    font-size: 1.2rem;
+    padding: 1rem 1.4rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .auctioncards{
+    .card{
+      .nftcard{
+        width: 75vw;
+      }
+    }
+  }
+.artists{
+  .artist{
+    width: 75vw;
+  }
+}
+.sub-heading{
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+}
+@media screen and (max-width:320px) {
+  .auctioncards{
+    .card{
+      .nftcard{
+        width: 80vw;
+      }
+    }
+  }
+.artists{
+  .artist{
+    width: 80vw;
+  }
+}
+.sub-heading{
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+}
+}
 
 @import "./backgrounds/bg-styles/linebg.scss";
 @import "./backgrounds/bg-styles/blurbg.scss";

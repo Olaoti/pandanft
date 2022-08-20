@@ -72,3 +72,17 @@
         }
     }
 }
+@media screen and (max-width: 380px){
+    .description{
+        padding: 0 1.2rem 4rem 1rem;
+
+        &__head{
+            font-size: 3.9rem;
+            line-height: 5.6rem;
+        }
+        &__text{
+            font-size: 1.4rem;
+            line-height: 3rem;
+        }
+    }
+}
