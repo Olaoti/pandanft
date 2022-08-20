@@ -373,6 +373,17 @@ function Nftlist({ checkList, random, btnCheck }) {
     });
     setLists(filtered);
   }, [selected]);
+
+  /*click to show or hide sort by options*/
+  const [showFilter, setShowFilter] = useState(false);
+  const toggleClick = () => {
+    if (showFilter) {
+      setShowFilter(false);
+    } else {
+      setShowFilter(true);
+    }
+  };
+
   return (
     <div>
       {checkList && <NFTcard nftlist={newLists} />}
@@ -381,9 +392,14 @@ function Nftlist({ checkList, random, btnCheck }) {
         <div>
           <div className="flexbox">
             <div>
-              <div className="btn">Sort by</div>
+              <div className="btn" onClick={toggleClick}>
+                Sort by :
+              </div>
             </div>
-            <div className="flexbox" onClick={handleClick}>
+            <div
+              className={`flexbox ${showFilter ? "showfilter" : "hidefilter"}`}
+              onClick={handleClick}
+            >
               <div className="btn" id="all">
                 All
               </div>

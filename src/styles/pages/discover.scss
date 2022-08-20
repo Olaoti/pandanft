@@ -37,7 +37,8 @@
         }
     }
     .flexbox{
-        padding: 0 8% 2.8rem;
+        padding: 0 3% 2.8rem;
+        align-items: baseline;
         .flexbox .btn:not(:last-child){
             margin-right: 2.4rem;
         }
@@ -48,5 +49,81 @@
     }
     .nft-section{
         padding: 4rem 8% 2rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .discover{
+        .flexbox{
+            padding: 0 0 2.8rem;
+            .flexbox .btn:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width:1050px) {
+    .discover{
+        .searchbox{
+            width: 70%;
+        }
+        .flexbox{
+            padding: 0 0 2.4rem;
+            .flexbox .btn:not(:last-child){
+                margin-right: 1.6rem;
+            }
+            .btn{
+                padding: 1rem 2rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+@media screen and (max-width:800px){
+    .discover{
+        .searchbox{
+            width: 90%;
+        }
+        .flexbox{
+            .btn{
+                padding: 1.2rem 3rem;
+                font-size: 2rem;
+            }
+            display: block;
+            .flexbox.hidefilter{
+                position: absolute;
+                visibility: hidden;
+                transition: all 300ms ease;
+                z-index: 9;
+                .btn{
+                    border: 1px solid transparent;
+                    font-size: 0;
+                }
+            }
+            .flexbox.showfilter{
+                padding: 3rem 1rem;
+                position: absolute;
+                visibility: visible;
+                z-index: 9;
+                background-color: $color-bgshadow-darker;
+                border-radius: 2rem;
+                transition: all 300ms ease;
+                .btn{
+                    border: 1px solid transparent;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .discover{
+        .searchbox{
+            width: 90%;
+            padding: 1rem 1.6rem;
+            margin: 2.4rem auto 3rem;
+            input{
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+            }
+        }
     }
 }
