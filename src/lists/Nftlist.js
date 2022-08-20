@@ -372,7 +372,7 @@ function Nftlist({ checkList, random, btnCheck }) {
       return list.nftgenre.includes(selected);
     });
     setLists(filtered);
-  }, [selected]);
+  }, [selected, lists]);
 
   /*click to show or hide sort by options*/
   const [showFilter, setShowFilter] = useState(false);
