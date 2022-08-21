@@ -11,3 +11,13 @@
     }
   }
 }
+@media screen and (max-width:850px) {
+  .productdescription{
+    width: 85%;
+  }
+}
+@media screen and (max-width:600px) {
+  .productdescription{
+    width: 100%;
+  }
+}

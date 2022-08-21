@@ -43,7 +43,7 @@ function Nav() {
         </div>
       </div>
       <div className={`nav__links ${menuClick ? "visible" : "hide"}`}>
-        <Link className="link" to="/">
+        <Link className="link" to="*">
           <div>Home</div>
         </Link>
         <Link className="link" to="discover">

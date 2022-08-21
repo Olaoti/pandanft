@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { LineChart, Line, XAxis, YAxis } from "recharts";
 
 function Producthistory() {
@@ -13,22 +13,38 @@ function Producthistory() {
     { name: "29/7", uv: 1.9, pv: 1200, amt: 1400 },
     { name: "31/7", uv: 2, pv: 1800, amt: 2800 },
   ];
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
   return (
     <div className="producthistory">
       <div className="texts">All Time Avg.Price</div>
       <LineChart
         className="lineChart"
-        width={1000}
+        width={windowSize.innerWidth - windowSize.innerWidth / 12}
         height={300}
         data={data}
-        margin={{ top: 5, right: 10, bottom: 5, left: 0 }}
+        margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
       >
-        <Line type="monotone" dataKey="uv" stroke="#1E50FF"  dot={false}/>
+        <Line type="monotone" dataKey="uv" stroke="#1E50FF" dot={false} />
         <XAxis dataKey="name" />
         <YAxis />
       </LineChart>
     </div>
   );
 }
-
+function getWindowSize() {
+  const { innerWidth, innerHeight } = window;
+  return { innerWidth, innerHeight };
+}
 export default Producthistory;

@@ -28,7 +28,7 @@ body {
   padding: 1.2rem 3rem;
   border-radius: 12px;
   border: 1px solid $color-pry-blue;
-  z-index: 9;
+  z-index: 8;
   transition: 300ms ease;
   width: fit-content;
   &:hover{
@@ -45,7 +45,7 @@ body {
   padding: 1.2rem 3rem;
   background-color: $color-pry-blue;
   border-radius: 12px;
-  z-index: 10;
+  z-index: 8;
   transition: 300ms ease;
   border: 1px solid $color-pry-blue;
   width: fit-content;
@@ -78,14 +78,13 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  text-align: center;
-  display: grid;
-  justify-content: center;
-  align-items: baseline;
   z-index: 7;
   top: 0;
   left: 0;
-  padding-top: 80%;
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2.4rem;
 }
 .timer{
   width: fit-content;
@@ -95,7 +94,6 @@ body {
   display: flex;
   background-color: $color-gray1;
   padding: .5rem 1.5rem;
-  align-items: center;
   border-radius: 1.6rem;
   height: min-content;
     &__icon{
@@ -111,18 +109,8 @@ body {
   justify-content: space-between;
 }
 @media screen and (max-width:950px) {
-  .auctioncards{
-    .card{
-      overflow: scroll;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-      .nftcard{
-        width: 35vw;
-      }
-    }
-  }
   .artists{
-    overflow: scroll;
+    overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
     .artist{
@@ -133,7 +121,19 @@ body {
       }
     }
   }
-  .auctioncards::-webkit-scrollbar,
+  .auctioncards{
+    .card{
+      overflow-x: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      .nftcard{
+        width: 35vw;
+      }
+    }
+  }
+  .auctioncards .card::-webkit-scrollbar{
+    display: none;
+  }
   .artists::-webkit-scrollbar{
     display: none;
   }

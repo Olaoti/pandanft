@@ -355,7 +355,7 @@ function Nftlist({ checkList, random, btnCheck }) {
     );
     return lists;
   };*/
-  const [selected, setSelected] = useState("");
+  /*const [selected, setSelected] = useState("");
 
   const handleClick = (e) => {
     const clickedBtn = e.target.id;
@@ -372,7 +372,7 @@ function Nftlist({ checkList, random, btnCheck }) {
       return list.nftgenre.includes(selected);
     });
     setLists(filtered);
-  }, [selected, lists]);
+  }, [selected, lists]);*/
 
   /*click to show or hide sort by options*/
   const [showFilter, setShowFilter] = useState(false);
@@ -398,7 +398,6 @@ function Nftlist({ checkList, random, btnCheck }) {
             </div>
             <div
               className={`flexbox ${showFilter ? "showfilter" : "hidefilter"}`}
-              onClick={handleClick}
             >
               <div className="btn" id="all">
                 All
