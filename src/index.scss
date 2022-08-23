@@ -264,13 +264,10 @@ body {
     padding: 1rem 1.4rem;
     line-height: 1.7rem;
   }
-}
-
-@media screen and (max-width:360px) {
   .auctioncards{
     .card{
       .nftcard{
-        width: 75vw;
+        width: 80vw;
       }
     }
   }
@@ -279,6 +276,9 @@ body {
     width: 75vw;
   }
 }
+}
+
+@media screen and (max-width:375px) {
 .sub-heading{
   font-size: 2.4rem;
   line-height: 3rem;
@@ -288,7 +288,7 @@ body {
   .auctioncards{
     .card{
       .nftcard{
-        width: 80vw;
+        width: 90vw;
       }
     }
   }
