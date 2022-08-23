@@ -143,6 +143,15 @@
                 padding:0 10%;
                 margin-bottom: 3rem;
             }
+            &__desc{
+                padding-left: 0;
+            }
+        }
+        .othernfts{
+            padding: 4rem 7%;
+            .flexbox{
+                padding: 4rem 0;
+            }
         }
     }
 }
@@ -166,7 +175,7 @@
 @media screen and (max-width:500px){
     .product{
         &__box{
-            padding: 12rem 4%;
+            padding: 12rem 5%;
             &__nftimage{
                 padding:0 2%;
                 margin-bottom: 3rem;
@@ -179,6 +188,12 @@
             padding: 4rem 2rem;
             &__navbtns{
                 padding-bottom: 2rem;
+            }
+        }
+        .othernfts{
+            padding: 5rem 6%;
+            .flexbox{
+                padding: 3.6rem 0;
             }
         }
     }

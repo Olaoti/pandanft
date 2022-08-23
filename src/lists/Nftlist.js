@@ -309,7 +309,7 @@ function Nftlist({ checkList, random, btnCheck }) {
     return checkList && list.nftpos === checkList;
   });
   const randomNft = lists?.filter((list) => {
-    return list.id < 2;
+    return list.id === random;
   });
   const viewClick = () => {
     setView(!view);
