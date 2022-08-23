@@ -303,9 +303,14 @@ function Nftlist({ checkList, random, btnCheck }) {
       setShowFilter(true);
     }
   };
+  const hideFilter = () => {
+    if (showFilter) {
+      setShowFilter(false);
+    }
+  };
 
   return (
-    <div>
+    <div onClick={hideFilter}>
       {checkList && <NFTcard nftlist={newLists} />}
       {random && <NFTcard nftlist={randomNft} />}
       {btnCheck ? (
