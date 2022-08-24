@@ -43,13 +43,13 @@ function Nav() {
         </div>
       </div>
       <div className={`nav__links ${menuClick ? "visible" : "hide"}`}>
-        <Link className="link" to="*">
+        <Link className="link" to="/">
           <div>Home</div>
         </Link>
-        <Link className="link" to="discover">
+        <Link className="link" to="/discover">
           <div>Discover</div>
         </Link>
-        <Link className="link" to="product">
+        <Link className="link" to="/product">
           <div>Docs</div>
         </Link>
         <div>Blog</div>
