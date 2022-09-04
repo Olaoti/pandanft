@@ -49,9 +49,7 @@ function Nav() {
         <Link className="link" to="/discover">
           <div>Discover</div>
         </Link>
-        <Link className="link" to="/product">
-          <div>Docs</div>
-        </Link>
+        <div>Docs</div>
         <div>Blog</div>
         <div>About Us</div>
         <div>Contact Us</div>

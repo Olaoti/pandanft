@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Nav from "../components/Nav";
 import Linebg from "../backgrounds/Linebg";
 import Blurbg from "../backgrounds/Blurbg";
@@ -28,21 +29,27 @@ function Home() {
         <div className="home__products">
           <div className="flexbox">
             <div className="sub-heading">Live Auctions</div>
-            <div className="btn">View More</div>
+            <Link className="link" to="/discover">
+              <div className="btn">View More</div>
+            </Link>
           </div>
           <Auction />
         </div>
         <div className="home__products">
           <div className="flexbox">
             <div className="sub-heading">Featured Artists</div>
-            <div className="btn">View NFTs</div>
+            <Link className="link" to="/discover">
+              <div className="btn">View NFTs</div>
+            </Link>
           </div>
           <Artists />
         </div>
         <div className="home__products">
           <div className="flexbox">
             <div className="sub-heading">Hot NFTs</div>
-            <div className="btn">View More</div>
+            <Link className="link" to="/discover">
+              <div className="btn">View More</div>
+            </Link>
           </div>
           <HotNft />
         </div>

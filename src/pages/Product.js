@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation, Link } from "react-router-dom";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import nft from "../assets/images/NFTimages/nft.png";
 import Timer from "../components/Timer";
 import Productdescription from "../components/Productdescription";
 import Productoffers from "../components/Productoffers";
 import Producthistory from "../components/Producthistory";
 import Auction from "../lists/components/Auction";
-import person_img from "../assets/images/peopleimages/person9.png";
 import creator_img from "../assets/images/peopleimages/person10.png";
+
+import Newlist from "../lists/Newlist";
 
 function Product({ name }) {
   const [descriptionclick, setDescriptionClick] = useState(true);
@@ -30,30 +31,45 @@ function Product({ name }) {
     setOfferClick(false);
   };
 
+  const [number, setNumber] = useState(0);
+
+  const location = useLocation();
+  const { nftid } = location.state ? location.state : 0;
+  useEffect(() => {
+    if (nftid <= Newlist.length || nftid === 0) {
+      setNumber(nftid);
+    } else {
+      setNumber(0);
+    }
+  }, [nftid]);
+
   return (
-    <div className="product">
+    <div className="product" id="#">
       <Nav />
       <div className="product__box">
         <div className="product__box__nftimage">
           <div className="producttimer">
             <Timer timervalue="4:50:43:22" className="newtime" />
           </div>
-          <img src={nft} className="productnftimg" alt="nft" />
+          <img
+            src={Newlist[number]?.nftima}
+            className="productnftimg"
+            alt="nft"
+          />
         </div>
         <div className="product__box__desc">
-          <div className="sub-heading">{name}#1119 Seagull</div>
+          <div className="sub-heading">{Newlist[number]?.nftname}</div>
           <div className="product__box__desc__details texts">
-            The Birdhouse is a collection of 6000 birds, each with it's own
-            unique traits & personality. See them all at TheBirdHouse.app
+            {Newlist[number]?.nftdesc}
           </div>
           <div className="product__box__desc__bid">
             <div className="product__box__desc__bid__pricebid">
               <div className="texts">Price Bid</div>
-              <div className="currentval">10.32 ETH</div>
+              <div className="currentval">{Newlist[number]?.nftprice} ETH</div>
             </div>
             <div className="product__box__desc__bid__lastbid">
               <div className="texts">Last Bid</div>
-              <div className="currentval">7.34 ETH</div>
+              <div className="currentval">{Newlist[number]?.lastbid} ETH</div>
             </div>
           </div>
           <div className="product__box__desc__personsdetails">
@@ -65,7 +81,7 @@ function Product({ name }) {
               </div>
             </div>
             <div className="product__box__desc__personsdetails__person2">
-              <img src={person_img} alt="" />
+              <img src={Newlist[number]?.manimg} alt="" />
               <div className="persondescription">
                 <div className="texts">Owner</div>
                 <div className="name">Crharony</div>
@@ -101,13 +117,19 @@ function Product({ name }) {
         ) : (
           ""
         )}
-        {offerClick ? <Productoffers className="offer-toggle" /> : ""}
+        {offerClick ? (
+          <Productoffers newno={number} className="offer-toggle" />
+        ) : (
+          ""
+        )}
         {historyClick ? <Producthistory className="history-toggle" /> : ""}
       </div>
       <div className="othernfts">
         <div className="flexbox">
           <div className="sub-heading">Another NFTs</div>
-          <div className="btn">View More</div>
+          <Link className="link" to="/discover">
+            <div className="btn">View More</div>
+          </Link>
         </div>
         <Auction />
       </div>

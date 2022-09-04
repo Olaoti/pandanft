@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import NFTcard from "../components/NFTcard";
+import { useEffect } from "react";
 
 import nftimg1 from "../assets/images/NFTimages/nft.png";
 import nftimg2 from "../assets/images/NFTimages/nft1.png";
@@ -29,7 +30,6 @@ import person6 from "../assets/images/peopleimages/person6.png";
 import person7 from "../assets/images/peopleimages/person7.png";
 import person8 from "../assets/images/peopleimages/person8.png";
 import person9 from "../assets/images/peopleimages/person9.png";
-import { useEffect } from "react";
 import person10 from "../assets/images/peopleimages/person10.png";
 import person11 from "../assets/images/peopleimages/person11.png";
 import person12 from "../assets/images/peopleimages/person12.png";
