@@ -43,6 +43,10 @@ function Product({ name }) {
     }
   }, [nftid]);
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+
   return (
     <div className="product" id="#">
       <Nav />

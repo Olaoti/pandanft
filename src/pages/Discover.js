@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "../components/Nav";
 //import NFTcard from "../components/NFTcard";
 //import Auctions from "../lists/components/Auctions";
@@ -6,6 +6,9 @@ import Footer from "../components/Footer";
 import MainNft from "../lists/components/MainNft";
 
 function Discover() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="discover">
       <Nav />
@@ -14,8 +17,8 @@ function Discover() {
         <input type="text" placeholder="type your keywords" />
         <span className="search">O</span>
       </div>
-     
-      <MainNft/>
+
+      <MainNft />
       <Footer />
     </div>
   );

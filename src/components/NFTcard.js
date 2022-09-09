@@ -21,7 +21,8 @@ function NFTcard({ nftlist }) {
                       className="link"
                       to={{}}
                       state={{ nftid: nft.id - 1 }}
-                    >
+
+>
                       <div className="button">Place a Bid</div>
                     </Link>
                   ) : (
